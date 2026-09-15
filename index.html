@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hora do Pênalti</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header><div class="brand">● HORA DO <b>PÊNALTI</b></div><button id="sound">♫ SOM: ON</button></header>
+    <section class="scoreboard"><div class="team"><span>VOCÊ</span><strong id="playerScore">0</strong></div><div class="round"><span>RODADA</span><b id="round">1 / 5</b></div><div class="team away"><strong id="keeperScore">0</strong><span>GOLEIRO</span></div></section>
+    <section class="stadium"><div class="crowd"></div><div class="goal"><i class="net"></i><i class="post left"></i><i class="post right"></i><i class="bar"></i></div><div class="keeper" id="keeper"><i class="head"></i><i class="body"></i><i class="arm l"></i><i class="arm r"></i><i class="leg l"></i><i class="leg r"></i></div><div class="ball" id="ball"></div></section>
+    <section class="controls"><p id="hint">ESCOLHA ONDE CHUTAR</p><div><button data-shot="left">↖<small>ESQUERDA</small></button><button data-shot="center">↑<small>MEIO</small></button><button data-shot="right">↗<small>DIREITA</small></button></div></section>
+  </main>
+  <aside id="overlay" class="hidden"><article><span id="icon">⚽</span><h1 id="title">GOL!</h1><p id="text">Bela cobrança!</p><button id="next">PRÓXIMO PÊNALTI</button></article></aside>
+  <script src="game.js"></script>
+</body>
+</html>
