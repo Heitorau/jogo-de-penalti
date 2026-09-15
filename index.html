@@ -1,17 +1,1 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hora do Pênalti</title><link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <main class="game-shell">
-    <header><div class="brand">● HORA DO <b>PÊNALTI</b></div><button id="sound">♫ SOM: ON</button></header>
-    <section class="scoreboard"><div class="team"><span>VOCÊ</span><strong id="playerScore">0</strong></div><div class="round"><span>RODADA</span><b id="round">1 / 5</b></div><div class="team away"><strong id="keeperScore">0</strong><span>GOLEIRO</span></div></section>
-    <section class="stadium"><div class="crowd"></div><div class="goal"><i class="net"></i><i class="post left"></i><i class="post right"></i><i class="bar"></i></div><div class="keeper" id="keeper"><i class="head"></i><i class="body"></i><i class="arm l"></i><i class="arm r"></i><i class="leg l"></i><i class="leg r"></i></div><div class="ball" id="ball"></div></section>
-    <section class="controls"><p id="hint">ESCOLHA ONDE CHUTAR</p><div><button data-shot="left">↖<small>ESQUERDA</small></button><button data-shot="center">↑<small>MEIO</small></button><button data-shot="right">↗<small>DIREITA</small></button></div></section>
-  </main>
-  <aside id="overlay" class="hidden"><article><span id="icon">⚽</span><h1 id="title">GOL!</h1><p id="text">Bela cobrança!</p><button id="next">PRÓXIMO PÊNALTI</button></article></aside>
-  <script src="game.js"></script>
-</body>
-</html>
+<!doctype html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Hora do Pênalti</title><link rel="stylesheet" href="style.css"></head><body><main><header>⚽ HORA DO <b>PÊNALTI</b><span id="level">DIFICULDADE: MÉDIO</span></header><section id="score"><div>VOCÊ<strong id="you">0</strong></div><div>RODADA<strong id="round">1 / 5</strong></div><div>ADVERSÁRIO<strong id="opp">0</strong></div></section><section id="field"><div id="goal"></div><div id="keeper">🧤</div><div id="ball">⚽</div></section><section id="controls"><h2 id="turn">SUA VEZ DE BATER</h2><p id="hint">ESCOLHA ONDE CHUTAR</p><div><button data-dir="left">↖<small>ESQUERDA</small></button><button data-dir="center">↑<small>MEIO</small></button><button data-dir="right">↗<small>DIREITA</small></button></div></section></main><aside id="modal"><article><span>🏟️</span><h1>HORA DO PÊNALTI</h1><p>Você bate e também defende. Escolha a dificuldade para começar.</p><div id="levels"><button data-level="easy">FÁCIL<small>Adversário menos preciso</small></button><button data-level="medium">MÉDIO<small>Desafio equilibrado</small></button><button data-level="hard">DIFÍCIL<small>Adversário muito esperto</small></button></div></article></aside><script src="game.js"></script></body></html>
